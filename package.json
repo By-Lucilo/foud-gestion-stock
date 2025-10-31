@@ -1,0 +1,13 @@
+{
+  "name": "foud-gestion-stock",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo \"No build step (static site)\"",
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "serverless-http": "^3.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>FOUD - Gestion des stocks</title>
+</head>
+<body>
+  <h1>Bienvenue sur FOUD</h1>
+  <button id="btn">Afficher les stocks</button>
+  <pre id="output"></pre>
+
+  <script>
+  document.getElementById('btn').addEventListener('click', async () => {
+    try {
+      const res = await fetch('/.netlify/functions/stocks');
+      const data = await res.json();
+      document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+    } catch (err) {
+      document.getElementById('output').textContent = "Erreur : " + err.message;
+    }
+  });
+  </script>
+</body>
+</html>
