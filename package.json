@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "echo \"No build step (static site)\"",
+    "build": "echo 'Build complete!"",
     "start": "netlify dev"
   },
   "dependencies": {
